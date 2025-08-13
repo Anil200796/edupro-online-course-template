@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPro - Learn Anything, Anytime</title>
+    <meta name="description" content="EduPro is a leading online learning platform, helping you to learn new skills with online courses.">
+
+    <!-- Google Fonts: Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Libraries CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">EduPro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <a href="login.html" class="btn btn-outline-primary ms-lg-3">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="d-flex align-items-center">
+            <div class="container text-center" data-aos="fade-up">
+                <h1>Learn Anything, Anytime</h1>
+                <p class="lead">The best online learning platform to help you achieve your goals.</p>
+                <form class="search-form mt-4">
+                    <input type="text" class="form-control" placeholder="What do you want to learn?">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Featured Categories Section -->
+        <section id="categories" class="py-5">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title text-center">Top Categories</h2>
+                <div class="row g-4 text-center">
+                    <div class="col-lg-3 col-md-6"><div class="category-card"><i class="fas fa-code"></i><h3>Development</h3></div></div>
+                    <div class="col-lg-3 col-md-6"><div class="category-card"><i class="fas fa-palette"></i><h3>Design</h3></div></div>
+                    <div class="col-lg-3 col-md-6"><div class="category-card"><i class="fas fa-chart-line"></i><h3>Business</h3></div></div>
+                    <div class="col-lg-3 col-md-6"><div class="category-card"><i class="fas fa-camera"></i><h3>Photography</h3></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Courses Section -->
+        <section id="popular-courses" class="py-5 bg-light">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title text-center">Popular Courses</h2>
+                <div class="swiper courses-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Course Card 1 -->
+                        <div class="swiper-slide">
+                            <div class="course-card">
+                                <img src="https://via.placeholder.com/400x250/0d6efd/FFFFFF?text=Course" class="card-img-top" alt="Course Image">
+                                <div class="card-body">
+                                    <span class="badge bg-primary">Development</span>
+                                    <h5 class="card-title mt-2"><a href="course-detail.html">The Complete Web Developer Course</a></h5>
+                                    <p class="card-instructor">By John Doe</p>
+                                    <div class="card-meta d-flex justify-content-between align-items-center">
+                                        <div class="rating"><i class="fas fa-star"></i> 4.8 (250)</div>
+                                        <div class="price fw-bold">$49.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more course cards here -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <img src="https://via.placeholder.com/600x400/cccccc/FFFFFF?text=Why+EduPro" class="img-fluid rounded" alt="Student learning">
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <h2 class="section-title">Why Choose EduPro?</h2>
+                        <ul class="list-unstyled">
+                            <li class="d-flex mb-3"><i class="fas fa-check-circle fa-2x text-success me-3"></i><div><h4>Expert Instructors</h4><p>Learn from industry experts who are passionate about teaching.</p></div></li>
+                            <li class="d-flex mb-3"><i class="fas fa-check-circle fa-2x text-success me-3"></i><div><h4>Flexible Learning</h4><p>Learn at your own pace, anytime, anywhere.</p></div></li>
+                            <li class="d-flex"><i class="fas fa-check-circle fa-2x text-success me-3"></i><div><h4>Active Community</h4><p>Join a vibrant community of learners and mentors.</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+         <div class="container text-center">
+             <p>&copy; 2025 EduPro. All rights reserved.</p>
+         </div>
+    </footer>
+    
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

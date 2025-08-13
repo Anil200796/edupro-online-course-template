@@ -1,0 +1,180 @@
+/* --- Google Fonts & Variables --- */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #0f5132; /* Green for success */
+    --light-bg: #f8f9fa;
+    --dark-bg: #1a1a1a;
+    --font-family: 'Nunito', sans-serif;
+}
+
+/* --- Base Styles --- */
+body { font-family: var(--font-family); }
+.section-title { font-weight: 700; margin-bottom: 40px; }
+
+/* --- Header --- */
+#header .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+.navbar-brand { font-weight: 700; font-size: 1.8rem; }
+
+/* --- Hero Section --- */
+#hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080/ddd/000?text=Learning') no-repeat center center/cover;
+    color: white;
+}
+.search-form {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+}
+.search-form .form-control {
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+.search-form .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* --- Category Card --- */
+.category-card {
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--light-bg);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.category-card i { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px; }
+
+/* --- Course Card --- */
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.course-card .card-title a { color: #333; text-decoration: none; transition: color 0.3s; }
+.course-card .card-title a:hover { color: var(--primary-color); }
+.rating i { color: #ffc107; }
+/* --- Inner Page Header --- */
+.page-header {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background-color: var(--light-bg);
+}
+.page-title { font-weight: 700; }
+
+/* --- Filter Bar --- */
+.filter-bar .form-control, .filter-bar .form-select {
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+/* --- Course Detail Page --- */
+.course-header-section {
+    padding: 80px 0;
+}
+.course-header-section h1 { font-weight: 700; }
+.course-content-box {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.course-purchase-card {
+    position: sticky;
+    top: 100px; /* Offset for sticky navbar */
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+}
+.course-purchase-card .price { font-weight: 700; }
+/* --- Authentication Pages (Login/Signup) --- */
+.auth-page {
+    background-color: var(--light-bg);
+}
+
+.auth-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.auth-brand-logo {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-card .form-control {
+    padding: 12px 15px;
+    border-radius: 8px;
+    background-color: var(--light-bg);
+    border: 1px solid #e9ecef;
+}
+
+.auth-card .form-control:focus {
+    background-color: #fff;
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.auth-card .btn-primary {
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.auth-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-card a:hover {
+    text-decoration: underline;
+}
+/* --- Stats Counter Section --- */
+.stat-item h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.stat-item p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* --- Instructors Section --- */
+.instructor-card {
+    transition: transform 0.3s;
+}
+.instructor-card:hover {
+    transform: translateY(-10px);
+}
+
+/* --- Contact Page --- */
+#contact-page .contact-info-box {
+    background-color: var(--light-bg);
+    border-radius: 8px;
+}
+#contact-page #contact-form {
+    background-color: #fff;
+    border-radius: 8px;
+}
